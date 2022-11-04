@@ -35,6 +35,7 @@ const PizzaBlock = ({pizzaData}) => {
 
     const result = pizzaData.map((pizza)=>{
         return (
+          <div className='pizza-block-wrapper'>
           <div key={pizza.id}  className="pizza-block">
               <img
                 className="pizza-block__image"
@@ -93,7 +94,9 @@ const PizzaBlock = ({pizzaData}) => {
                       <i>{count}</i>
                   </div>
               </div>
-          </div>)
+          </div>
+          </div>
+        )
     })
 
 

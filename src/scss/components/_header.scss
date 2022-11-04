@@ -20,13 +20,39 @@
     h1 {
       color: #181818;
       font-size: 24px;
-      letter-spacing: 1%;
+      letter-spacing: 0.1rem;
       text-transform: uppercase;
       font-weight: 800;
     }
 
     p {
       color: #7b7b7b;
+      letter-spacing: 0.1rem;
+    }
+  }
+  @media (max-width: 800px) {
+    border-bottom: 1px solid $gray-line;
+    padding: 40px 0;
+
+    h1 {
+      color: #181818;
+      font-size: 20px;
+      //letter-spacing: 1%;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    p {
+      color: #7b7b7b;
+      font-size: 16px;
+      font-weight: 600;
+      margin-right: 4px;
+
+    }
+    img {
+      margin-right: 10px;
+      width: 44px;
+      height: 44px;
     }
   }
 }

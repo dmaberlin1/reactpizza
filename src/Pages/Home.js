@@ -34,7 +34,7 @@ const pizzaData = [
 
 
 
-const Home = () => {
+const Home = ({searchValue}) => {
 
     const[items,setItems]=useState([])
     const [isLoading,setIsLoading]=useState(true)
@@ -47,11 +47,13 @@ const Home = () => {
             isLoading(false)
 
         })
+        window.scrollTo(0,0)
     }, []);
 
 
     return(
     <>
+        <div className='container'>
         <div className="content__top">
             <Categories></Categories>
             <Sort></Sort>
@@ -61,6 +63,7 @@ const Home = () => {
             {/*isLoading? <PizzaSceleton></PizzaSceleton>*/}
             <PizzaBlock pizzaData={pizzaData}></PizzaBlock>
 
+        </div>
         </div>
     </>
   )

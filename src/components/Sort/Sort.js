@@ -29,7 +29,7 @@ const Sort = () => {
                 />
             </svg>
             <b>Сортировка по:</b>
-            <span onClick={()=>setIsVisible(!isVisible)}>{sortName}</span>
+            <span className='sort-name' onClick={()=>setIsVisible(!isVisible)}>{sortName}</span>
         </div>
         {isVisible && < div className="sort__popup">
             <ul>
